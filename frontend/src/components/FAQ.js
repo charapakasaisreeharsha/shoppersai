@@ -7,7 +7,7 @@ const FAQ = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/faqs')
+    axios.get('https://shoppersai-2.onrender.com/api/faqs')
       .then(res => setFaqs(res.data))
       .catch(err => {
         console.error('Error fetching FAQs:', err);
